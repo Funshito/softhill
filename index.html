@@ -1,85 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="resources/img/logo-icon.png"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="resources/img/logo-icon.png" />
     <title>softhill</title>
     <!-- local boostrap link  -->
-    <link rel="stylesheet" href="./resources/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./resources/css/bootstrap.min.css" />
     <!-- bootstrap icon cdn  -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <!-- css styling  -->
-     <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  
-        <header>
-            <div class="pre-nav-bg">
-                <div class="container pre-nav">
-                    <div class="pre-info">
-                        <p class="bi bi-telephone mr-3 mt-2"></p>
-                        <h4>+234 807 4093 876</h4>
-                    </div>
-                    <div class="pre-info">
-                        <p class="bi bi-envelope mr-3 mt-2"></p>
-                        <h4>@oluwafunshoalabi97@gmail.com</h4>
-                    </div>
-                    <div class="pre-info">
-                        <p class="bi bi-geo-alt-fill mr-3 mt-2"></p>
-                        <h4>Nigeria</h4>
-                    </div>
-                </div>
-            </div>
-            <div class="container header">
-                <div id="logo">
-                    <a href=""><img src="./resources/img/logo.png" alt=""></a>
-                </div>
-    
-                <nav>
-                    <ul class="">
-                        <li><a href="">Home</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Services</a></li>
-                        <li><a href="">Portfolio</a></li>
-                        <li><a href="">Contact</a></li>
-                    </ul>
-                </nav>
-    
-                <!-- search and social handles  -->
-                <div class="header-right">
-                    <form action="" id="search-form">
-                        <div class="header-search">
-                            <input type="text" class="mr-2">
-                            <p class="bi bi-search mr-5"></p>
-                        </div>
-                    </form>
-                    <div class="social">
-                        <p class="bi bi-instagram gh"></p>
-                        <p class="bi bi-tiktok gh"></p>
-                        <p class="bi bi-linkedin gh"></p>
-                        <p class="bi bi-facebook gh"></p>
-                    </div>
-                </div>
-                <div class="mobile-nav">
-                    <p class="bi bi-list"></p>
-                </div>
-            </div>
-        </header>
-
-        <div class="banner">
-            <div class="container">
-                <h1>Welcome to Softhill</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ipsum vel libero vulputate consectetur. Maecenas sit amet ipsum in neque scelerisque finibus.</p>
-                <button class="btn btn-primary">Learn More</button>
-            </div>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="pre-nav-bg">
+        <div class="container pre-nav">
+          <div class="pre-info">
+            <p class="bi bi-telephone mr-3 mt-2"></p>
+            <h4>+234 807 4093 876</h4>
+          </div>
+          <div class="pre-info">
+            <p class="bi bi-envelope mr-3 mt-2"></p>
+            <h4>@oluwafunshoalabi97@gmail.com</h4>
+          </div>
+          <div class="pre-info">
+            <p class="bi bi-geo-alt-fill mr-3 mt-2"></p>
+            <h4>Nigeria</h4>
+          </div>
+        </div>
+      </div>
+      <!-- desktop navigation  -->
+      <div class="container header">
+        <div id="logo">
+          <a href=""><img src="./resources/img/logo.png" alt="" /></a>
         </div>
 
+        <nav>
+          <ul class="">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
 
-    
+        <!-- search and social handles  -->
+        <div class="header-right">
+          <form action="" id="search-form">
+            <div class="header-search">
+              <input type="text" class="mr-2" />
+              <p class="bi bi-search mr-5"></p>
+            </div>
+          </form>
+          <div class="social">
+            <p class="bi bi-instagram gh"></p>
+            <p class="bi bi-tiktok gh"></p>
+            <p class="bi bi-linkedin gh"></p>
+            <p class="bi bi-facebook gh"></p>
+          </div>
+        </div>
+        <div class="mobile-btn">
+          <p class="bi bi-list" id="menu"></p>
+        </div>
+      </div>
+
+      <!-- mobile nav  -->
+       <div class="mobile-nav">
+        <div class="text-white" id="close">
+            <p class="bi bi-x"></p>
+  
+        </div>
+        <ul class="">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolio</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+       </div>
+    </header>
+
+    <div class="banner">
+      <div class="container">
+        <h1>Welcome to Softhill</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel ipsum
+          vel libero vulputate consectetur. Maecenas sit amet ipsum in neque
+          scelerisque finibus.
+        </p>
+        <button class="btn btn-primary">Learn More</button>
+      </div>
+    </div>
+
     <script src="./resources/js/jquery-3.3.1.slim.min.js"></script>
     <script src="./resources/js/popper.min.js"></script>
     <script src="./resources/js/bootstrap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="./main.js"></script>
+  </body>
 </html>

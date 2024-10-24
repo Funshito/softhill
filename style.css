@@ -17,6 +17,7 @@ body{
 }
 .header{
     padding: 15px 0;
+    position: relative;
 }
 .header, .header-right, .social, .pre-info, .pre-nav{
     display: flex;
@@ -109,7 +110,7 @@ nav ul li a{
     color: #fff;
 }
 .banner p{
-    width: 500px;
+    max-width: 500px;
 }
 
 
@@ -117,6 +118,9 @@ nav ul li a{
 
 
 /* mobile styles  */
+.mobile-btn{
+    display: none;
+}
 .mobile-nav{
     display: none;
 }
@@ -124,12 +128,92 @@ nav ul li a{
 
 
 /* responsiveness  */
+@media (max-width: 1200){
+    .header-right input{
+        display: none;
+    }
+}
+
 @media (max-width: 480px) {
-    .mobile-nav{
+    .mobile-btn{
         display: block;
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     } 
     nav, .header-right{
         display: none;
+    }
+    .pre-nav-bg{
+        display: none;
+    }
+    .header{
+        padding: 5px 10px;
+        align-items: center;
+    }
+    .banner{
+        height: 60vh;
+    }
+    .mobile-nav{
+        position: absolute;
+        top: 0;
+        background-color: black;
+        width: 100%;
+    }
+    .mobile-nav ul li{
+        list-style: none;
+        margin: 5px 2px;
+        left: 0;
+    }
+    .mobile-nav ul li a{
+        color: #fff;
+        font-size: 1.3rem;
+        text-decoration: none;
+        margin-left: 0;
+    }
+    .mobile-nav p{
+        text-align: right;
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width: 768px){
+    .mobile-btn{
+        display: block;
+        font-size: 2.5rem;
+    } 
+    nav, .header-right{
+        display: none;
+    }
+    .pre-nav-bg{
+        display: none;
+    }
+    .header{
+        padding: 5px 10px;
+        align-items: center;
+    }
+    .banner{
+        height: 60vh;
+    }
+    .mobile-nav{
+        display: none;
+        position: absolute;
+        top: 0;
+        background-color: black;
+        width: 100%;
+    }
+    .mobile-nav ul li{
+        list-style: none;
+        margin: 5px 2px;
+        left: 0;
+    }
+    .mobile-nav ul li a{
+        color: #fff;
+        font-size: 1.3rem;
+        text-decoration: none;
+        margin-left: 0;
+    }
+    .mobile-nav p{
+        text-align: right;
+        font-size: 3rem;
     }
 }
