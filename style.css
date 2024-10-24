@@ -1,7 +1,9 @@
 
 /* importing boostrap cdn  */
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
-
+body{
+    font-family: 'poppins', 'serif';
+}
 .pre-nav-bg{
     background-color: rgb(44, 44, 44);
 }
@@ -16,15 +18,19 @@
 .header{
     padding: 15px 0;
 }
-.header, .header-right, .header-search, .social, .pre-info, .pre-nav{
+.header, .header-right, .social, .pre-info, .pre-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 header{
-    background-color: rgb(247, 247, 247);
+    background-color: rgb(241, 241, 241);
+    
 }
-
+.header-search{
+    display: flex;
+    align-items: center;
+}
 
 #logo img{
     width: 100px;
@@ -35,9 +41,15 @@ nav ul li{
     display: inline-block;
     margin: 0 10px;
 }
+
+nav ul li a:active{
+    border-bottom: 3px solid blue;
+    color: blue;
+}
 nav ul li a:hover{
-    border-bottom: 1px solid red;
+    border-bottom: 3px solid blue;
     text-decoration: none;
+    color: blue;
 }
 nav ul li a{
     font-size: 1.1rem;
@@ -47,6 +59,59 @@ nav ul li a{
     color: rgb(43, 43, 43);
     text-transform: capitalize;
 }
+.header-right input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 5px 10px;
+}
+.header-search .bi{
+    font-size: 1.2rem;
+    font-weight: 800;
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 2px 5px;
+    color: #555;
+    border-radius: 5px;
+}
+.header-search .bi:hover{
+    color: yellow;
+    background-color: #555;
+}
+.header-right .gh{
+    cursor: pointer;
+    padding: 2px 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: grey;
+    font-size: 1.2rem;
+}
+.header-right .gh:hover{
+    color: #fff;
+    background-color: grey;
+}
+
+
+
+
+/* banner section  */
+.banner{
+    background-image: url(./resources/img/banner.jpg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner{
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.banner p{
+    width: 500px;
+}
+
 
 
 
